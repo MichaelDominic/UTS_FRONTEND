@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Restaurant</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="menu-header">
+          <div>
+            <a onclick="showMenu()"> Menu </a>
+            <a onclick="showFavorites()"> Favorites </a>
+            <a onclick="showFood()"> Food </a>
+            <a onclick="showDrink()"> Drink </a>
+            <a onclick="showDessert()"> Dessert </a>
+          </div>
+        </div>
+        <div class="items" id="items"></div>
+      </div>
+      <div class="sale">
+        <div class="sale-header">
+          <h2>Current sale (0)</h2>
+        </div>
+        <div class="sale-items" id="sale-items"></div>
+        <div class="sale-summary">
+          <p>
+            Discounts
+            <span id="discounts"> -$0.00 </span>
+          </p>
+          <p>
+            Tax
+            <span id="tax"> $0.00 </span>
+          </p>
+        </div>
+        <div class="charge-button" id="charge-button" onclick="charge()">
+          Charge $0.00
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
